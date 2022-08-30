@@ -1,7 +1,5 @@
 <div align="center">
 
-<img src="https://github.com/drisabelles/frontmentor-space-tourism/blob/main/images/favicon-32x32.png">
-
 # Luminus - Home Care
 
 </div>
