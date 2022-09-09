@@ -1,5 +1,7 @@
 <div align="center">
 
+<img width="80px" heigth="80px" src="https://github.com/drisabelles/atv-ilp-luminus/blob/main/images/logo-luminus.png">
+
 # Luminus - Home Care
 
 </div>
