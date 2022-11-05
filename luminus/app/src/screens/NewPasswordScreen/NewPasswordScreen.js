@@ -2,42 +2,54 @@ import React, {useState} from 'react';
 import {View, Text, Image, StyleSheet, useWindowDimensions} from 'react-native';
 import CustomInput from '../../components/CustomInput/CustomInput';
 import CustomButton from '../../components/CustomButton/CustomButton';
+import {useNavigation} from '@react-navigation/native';
 
 const ForgotPasswordScreen = () => {
   const [code, setCode] = useState('');
   const [newPassword, setNewPassword] = useState('');
+  const navigation = useNavigation();
 
   const onChangePasswordPress = () => {
-    console.warn('ChangePasswordPress');
+    console.warn('Sua senha foi modificada!');
+  };
+
+  const onResendPress = () => {
+    console.warn('Um novo código de confirmação foi enviado para seu email');
   };
 
   const onSignInPress = () => {
-    console.warn('onSignInPress');
+    navigation.navigate('SignIn');
   };
 
   return (
     <View style={styles.root}>
-      <Text style={styles.title}>Create you new password</Text>
+      <Text style={styles.title}>Crie uma nova senha</Text>
 
-      <Text style={styles.label}>Code</Text>
+      <Text style={styles.label}>Código</Text>
       <CustomInput
-        placeholder="Enter your confirmation code"
+        placeholder="Digite seu código de confirmação"
         value={code}
         setValue={setCode}
       />
 
-      <Text style={styles.label}>New Password</Text>
+      <Text style={styles.label}>Nova senha</Text>
       <CustomInput
-        placeholder="Enter your new password"
+        placeholder="Digite a sua nova senha"
         value={newPassword}
         setValue={setNewPassword}
         secureTextEntry={true}
       />
 
-      <CustomButton text="Change password" onPress={onChangePasswordPress} />
+      <CustomButton text="Mudar senha" onPress={onChangePasswordPress} />
 
       <CustomButton
-        text="Back to sign in"
+        text="Reenviar código de confirmação"
+        onPress={onResendPress}
+        type="SECONDARY"
+      />
+
+      <CustomButton
+        text="Voltar para login"
         onPress={onSignInPress}
         type="TERTIARY"
       />

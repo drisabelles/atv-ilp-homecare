@@ -2,16 +2,18 @@ import React from 'react';
 import {View, Image, StyleSheet, useWindowDimensions} from 'react-native';
 import Logo from '../../../assets//images/logo-luminus.png';
 import CustomButton from '../../components/CustomButton/CustomButton';
+import {useNavigation} from '@react-navigation/native';
 
 const SignUpScreen = () => {
   const {height} = useWindowDimensions();
+  const navigation = useNavigation();
 
-  const onExistentPacientsPress = () => {
-    console.warn('ExistentPacientsPress');
+  const onExistentPatientsPress = () => {
+    console.warn('ExistentPatientsPress');
   };
 
-  const onPacientRegistrationPress = () => {
-    console.warn('PacientRegistrationPress');
+  const onPatientRegistrationPress = () => {
+    navigation.navigate('PatientRegistration');
   };
 
   const onSeeAccountPress = () => {
@@ -30,24 +32,21 @@ const SignUpScreen = () => {
         resizeMode="contain"
       />
 
+      <CustomButton text="Ver pacientes" onPress={onExistentPatientsPress} />
+
       <CustomButton
-        text="See existent pacients"
-        onPress={onExistentPacientsPress}
+        text="Cadastrar pacientes"
+        onPress={onPatientRegistrationPress}
       />
 
       <CustomButton
-        text="Pacient registration"
-        onPress={onPacientRegistrationPress}
-      />
-
-      <CustomButton
-        text="See your account"
+        text="Sua conta"
         onPress={onSeeAccountPress}
         type="SECONDARY"
       />
 
       <CustomButton
-        text="Having any problems? We can help you"
+        text="Está tendo algum problema? Nós podemos te ajudar"
         onPress={onHelpPress}
         type="TERTIARY"
       />

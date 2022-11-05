@@ -2,32 +2,34 @@ import React, {useState} from 'react';
 import {View, Text, Image, StyleSheet, useWindowDimensions} from 'react-native';
 import CustomInput from '../../components/CustomInput/CustomInput';
 import CustomButton from '../../components/CustomButton/CustomButton';
+import {useNavigation} from '@react-navigation/native';
 
 const ForgotPasswordScreen = () => {
   const [username, setUsername] = useState('');
+  const navigation = useNavigation();
 
   const onSendPress = () => {
-    console.warn('Send');
+    navigation.navigate('NewPassword');
   };
 
   const onSignInPress = () => {
-    console.warn('onSignInPress');
+    navigation.navigate('SignIn');
   };
 
   return (
     <View style={styles.root}>
-      <Text style={styles.title}>Reset your password</Text>
+      <Text style={styles.title}>Redefina sua senha</Text>
 
       <CustomInput
-        placeholder="Enter your username"
+        placeholder="Digite seu nome de usuário"
         value={username}
         setValue={setUsername}
       />
 
-      <CustomButton text="Send" onPress={onSendPress} />
+      <CustomButton text="Enviar" onPress={onSendPress} />
 
       <CustomButton
-        text="Back to sign in"
+        text="Voltar para login"
         onPress={onSignInPress}
         type="TERTIARY"
       />

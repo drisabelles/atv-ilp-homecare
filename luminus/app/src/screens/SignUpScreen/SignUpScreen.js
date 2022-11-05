@@ -1,5 +1,7 @@
 import React, {useState} from 'react';
 import {View, Text, Image, StyleSheet, useWindowDimensions} from 'react-native';
+import {useNavigation} from '@react-navigation/native';
+
 import CustomInput from '../../components/CustomInput/CustomInput';
 import CustomButton from '../../components/CustomButton/CustomButton';
 import SocialSignInButtons from '../../components/SocialSignInButtons/SocialSignInButtons';
@@ -10,8 +12,10 @@ const SignUpScreen = () => {
   const [password, setPassword] = useState('');
   const [passwordRepeat, setPasswordRepeat] = useState('');
 
+  const navigation = useNavigation();
+
   const onRegisterPress = () => {
-    console.warn('Register');
+    navigation.navigate('ConfirmEmail');
   };
 
   const onTermsOfUsePress = () => {
@@ -23,15 +27,15 @@ const SignUpScreen = () => {
   };
 
   const onSignInPress = () => {
-    console.warn('onSignInPress');
+    navigation.navigate('SignIn');
   };
 
   return (
     <View style={styles.root}>
-      <Text style={styles.title}>Create an account</Text>
+      <Text style={styles.title}>Crie uma conta</Text>
 
       <CustomInput
-        placeholder="Username"
+        placeholder="Nome de usuário"
         value={username}
         setValue={setUsername}
       />
@@ -39,29 +43,29 @@ const SignUpScreen = () => {
       <CustomInput placeholder="Email" value={email} setValue={setEmail} />
 
       <CustomInput
-        placeholder="Password"
+        placeholder="Senha"
         value={password}
         setValue={setPassword}
         secureTextEntry={true}
       />
 
       <CustomInput
-        placeholder="Repeat Password"
+        placeholder="Repita sua senha"
         value={passwordRepeat}
         setValue={setPasswordRepeat}
         secureTextEntry={true}
       />
 
-      <CustomButton text="Register" onPress={onRegisterPress} />
+      <CustomButton text="Cadastrar" onPress={onRegisterPress} />
 
       <Text style={styles.text}>
-        By registering, you confirm that you accept our{' '}
+        Ao se cadastrar, você concorda em aceitar nossos{' '}
         <Text style={styles.link} onPress={onTermsOfUsePress}>
-          Terms of Use
+          Termos de Uso
         </Text>{' '}
-        and{' '}
+        e{' '}
         <Text style={styles.link} onPress={onPrivacyPress}>
-          Privacy Policy
+          Políticas de Privacidade
         </Text>
         .
       </Text>
@@ -69,7 +73,7 @@ const SignUpScreen = () => {
       <SocialSignInButtons />
 
       <CustomButton
-        text="Have an account? Sign in"
+        text="Já tem uma conta? Faça login"
         onPress={onSignInPress}
         type="TERTIARY"
       />

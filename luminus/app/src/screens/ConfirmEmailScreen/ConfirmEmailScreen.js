@@ -2,43 +2,45 @@ import React, {useState} from 'react';
 import {View, Text, Image, StyleSheet, useWindowDimensions} from 'react-native';
 import CustomInput from '../../components/CustomInput/CustomInput';
 import CustomButton from '../../components/CustomButton/CustomButton';
+import {useNavigation} from '@react-navigation/native';
 
 const ConfirmEmailScreen = () => {
   const [code, setCode] = useState('');
+  const navigation = useNavigation();
 
   const onConfirmPress = () => {
-    console.warn('Confirm');
+    navigation.navigate('Home');
   };
 
   const onResendPress = () => {
-    console.warn('onResendPress');
+    console.warn('Um novo código foi enviado para seu email!');
   };
 
   const onSignInPress = () => {
-    console.warn('onSignInPress');
+    navigation.navigate('SignIn');
   };
 
   return (
     <View style={styles.root}>
-      <Text style={styles.title}>Confirm your email</Text>
+      <Text style={styles.title}>Confirme seu email</Text>
 
-      <Text style={styles.label}>Code</Text>
+      <Text style={styles.label}>Código</Text>
       <CustomInput
-        placeholder="Enter your confirmation code"
+        placeholder="Digite o seu código de confirmação"
         value={code}
         setValue={setCode}
       />
 
-      <CustomButton text="Confirm" onPress={onConfirmPress} />
+      <CustomButton text="Confirmar" onPress={onConfirmPress} />
 
       <CustomButton
-        text="Resend confirmation code"
+        text="Reenviar código de confirmação"
         onPress={onResendPress}
         type="SECONDARY"
       />
 
       <CustomButton
-        text="Back to sign in"
+        text="Voltar para login"
         onPress={onSignInPress}
         type="TERTIARY"
       />
