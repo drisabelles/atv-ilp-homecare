@@ -5,6 +5,18 @@ import {useNavigation} from '@react-navigation/native';
 import CheckBox from '../../components/CheckBox';
 
 const PatientAnamnesis = () => {
+  const optionsBloodType = [
+    {text: 'A', id: 1},
+    {text: 'B', id: 2},
+    {text: 'O', id: 3},
+    {text: 'AB', id: 4},
+  ];
+
+  const optionsRhFactor = [
+    {text: '-', id: 1},
+    {text: '+', id: 2},
+  ];
+
   const optionsYesOrNo = [
     {text: 'Sim', id: 1},
     {text: 'Não', id: 2},
@@ -51,50 +63,55 @@ const PatientAnamnesis = () => {
       text: 'Prestar atenção, entender e discutir um programa, jornal ou revista',
       id: 10,
     },
-    {text: 'Lembrar-se de compromissos, acontecimentos e familiares', id: 10},
+    {text: 'Lembrar-se de compromissos, acontecimentos e familiares', id: 11},
   ];
 
   return (
     <View style={styles.root}>
-      <Text style={styles.text}>O paciente possui alguma deficiência?</Text>
-      <CheckBox
-        options={optionsDeficiency}
-        onChange={option => alert(option)}
-        multiple="true"
-      />
+      <Text style={styles.text}>Tipo sanguíneo: </Text>
+      <CheckBox options={optionsBloodType} />
 
-      <Text style={styles.text}>Como é a locomoção do paciente?</Text>
-      <CheckBox
-        options={optionsLocomotion}
-        onChange={option => alert(option)}
-      />
+      <Text style={styles.text}>Fator RH:</Text>
+      <CheckBox options={optionsRhFactor} />
 
-      <Text style={styles.text}>
-        Assinale as atividades básicas de autocuidado que o paciente consegue
-        executar sozinho:
-      </Text>
-      <CheckBox
-        options={optionsBasicActivities}
-        onChange={option => alert(option)}
-        multiple="true"
-      />
+      <Text style={styles.text}>Mora sozinho(a)?</Text>
+      <CheckBox options={optionsYesOrNo} />
+
+      <Text style={styles.text}>O(A) paciente possui alguma deficiência?</Text>
+      <CheckBox options={optionsDeficiency} multiple="true" />
+
+      <Text style={styles.text}>Como é a locomoção do/da paciente?</Text>
+      <CheckBox options={optionsLocomotion} />
 
       <Text style={styles.text}>
-        Assinale as atividades instrumentais que o paciente consegue executar
-        sozinho:
+        Assinale as atividades básicas de autocuidado que o(a) paciente consegue
+        executar sozinho(a):
       </Text>
-      <CheckBox
-        options={optionsIntrumentalActivities}
-        onChange={option => alert(option)}
-        multiple="true"
-      />
+      <CheckBox options={optionsBasicActivities} multiple="true" />
+
+      <Text style={styles.text}>
+        Assinale as atividades instrumentais que o(a) paciente consegue executar
+        sozinho(a):
+      </Text>
+      <CheckBox options={optionsIntrumentalActivities} multiple="true" />
+
+      <Text style={styles.text}>Fuma?</Text>
+      <CheckBox options={optionsYesOrNo} />
+
+      <Text style={styles.text}>Ingere bebida alcóolica?</Text>
+      <CheckBox options={optionsYesOrNo} />
+
+      <Text style={styles.text}>
+        Faz atividade física (inclui fisioterapia, pilates e afins)?
+      </Text>
+      <CheckBox options={optionsYesOrNo} />
     </View>
   );
 };
 
 const styles = StyleSheet.create({
   root: {
-    padding: 20,
+    padding: 5,
   },
 
   text: {

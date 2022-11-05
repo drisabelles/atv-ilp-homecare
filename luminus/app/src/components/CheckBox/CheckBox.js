@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
-const CheckBox = ({options = [], onChange, multiple = false}) => {
+const CheckBox = ({options = [], multiple = false}) => {
   const [selected, setSelected] = useState([]);
 
   function toggle(id) {
@@ -17,8 +17,6 @@ const CheckBox = ({options = [], onChange, multiple = false}) => {
 
     setSelected(arraySelecteds);
   }
-
-  useEffect(() => onChange(selected), [selected]);
 
   return (
     <View style={styles.container}>
