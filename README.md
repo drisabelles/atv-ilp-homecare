@@ -24,9 +24,10 @@ Em breve.
 
 Para mostrar as telas existentes na aplicação de forma mais prática, abaixo temos alguns prints do aplicativo.
 
-<img width="300px" heigth="700px" src="https://github.com/drisabelles/atv-ilp-luminus/blob/main/images/tela-login.png"> <img width="300px" heigth="700px" src="https://github.com/drisabelles/atv-ilp-luminus/blob/main/images/tela-registration.png"> <img width="300px" heigth="700px" src="https://github.com/drisabelles/atv-ilp-luminus/blob/main/images/tela-confirmemail.png">
-
-<img width="300px" heigth="700px" src="https://github.com/drisabelles/atv-ilp-luminus/blob/main/images/tela-forgotpassword.png"> <img width="300px" heigth="700px" src="https://github.com/drisabelles/atv-ilp-luminus/blob/main/images/tela-newpassword.png"> <img width="300px" heigth="700px" src="https://github.com/drisabelles/atv-ilp-luminus/blob/main/images/tela-home.png">
+<img width="300px" heigth="700px" src="https://github.com/drisabelles/atv-ilp-luminus/blob/main/images/tela-login.png"> <img width="300px" heigth="700px" src="https://github.com/drisabelles/atv-ilp-luminus/blob/main/images/tela-registration.png"> 
+<img width="300px" heigth="700px" src="https://github.com/drisabelles/atv-ilp-luminus/blob/main/images/tela-confirmemail.png"> <img width="300px" heigth="700px" src="https://github.com/drisabelles/atv-ilp-luminus/blob/main/images/tela-forgotpassword.png"> 
+<img width="300px" heigth="700px" src="https://github.com/drisabelles/atv-ilp-luminus/blob/main/images/tela-newpassword.png"> <img width="300px" heigth="700px" src="https://github.com/drisabelles/atv-ilp-luminus/blob/main/images/tela-home.png">
+<img width="300px" heigth="700px" src="https://github.com/drisabelles/atv-ilp-luminus/blob/main/images/tela-patientregistration.png">
 
 ## Links
 
