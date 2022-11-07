@@ -25,9 +25,34 @@ Em breve.
 Para mostrar as telas existentes na aplicação de forma mais prática, abaixo temos alguns prints do aplicativo.
 
 <img width="300px" heigth="700px" src="https://github.com/drisabelles/atv-ilp-luminus/blob/main/images/tela-login.png"> <img width="300px" heigth="700px" src="https://github.com/drisabelles/atv-ilp-luminus/blob/main/images/tela-registration.png"> 
+
 <img width="300px" heigth="700px" src="https://github.com/drisabelles/atv-ilp-luminus/blob/main/images/tela-confirmemail.png"> <img width="300px" heigth="700px" src="https://github.com/drisabelles/atv-ilp-luminus/blob/main/images/tela-forgotpassword.png"> 
+
 <img width="300px" heigth="700px" src="https://github.com/drisabelles/atv-ilp-luminus/blob/main/images/tela-newpassword.png"> <img width="300px" heigth="700px" src="https://github.com/drisabelles/atv-ilp-luminus/blob/main/images/tela-home.png">
-<img width="300px" heigth="700px" src="https://github.com/drisabelles/atv-ilp-luminus/blob/main/images/tela-patientregistration.png">
+
+<img width="300px" heigth="700px" src="https://github.com/drisabelles/atv-ilp-luminus/blob/main/images/tela-patientregistration.png"> <img width="300px" heigth="700px" src="https://github.com/drisabelles/atv-ilp-luminus/blob/main/images/tela-healthregistration.png">
+
+<img width="300px" heigth="700px" src="https://github.com/drisabelles/atv-ilp-luminus/blob/main/images/tela-medicalregistration.png"> <img width="300px" heigth="700px" src="https://github.com/drisabelles/atv-ilp-luminus/blob/main/images/tela-relativeregistration.png">
+
+## Executando
+
+```bash
+# Baixe este repositório ou clone pelo Git usando o comando:
+$ git clone https://github.com/drisabelles/atv-ilp-luminus.git
+
+# Acesse a pasta do projeto
+$ cd atv-ilp-luminus\luminus
+
+# Instale as dependências
+$ npm install
+
+# Iniciar o projeto
+$ npm start
+
+# Iniciar o projeto no emulador
+$ npm run android
+
+```
 
 ## Links
 
