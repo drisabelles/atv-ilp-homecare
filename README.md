@@ -8,7 +8,7 @@
 
 > Aplicativo mobile para cuidadores de idosos e profissionais da área da saúde que realizam atendimentos à domicílio. Esse é um desenvolvimento decorrente do acompanhamento das aulas de Programação para Dispositivos Móveis I, ministradas pelo professor Gerson Penha na FATEC São José dos Campos - Jessen Vidal.
 
-## 📃 Tabela de conteúdos
+## Tabela de conteúdos
 
 - [Usabilidades](#usabilidades)
 - [Screeenshots](#screenshots)
@@ -61,8 +61,8 @@ Em breve.
 ## Ferramentas
 ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 ![React Native](https://img.shields.io/badge/react_native-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
-![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![Android Studio](https://img.shields.io/badge/Android%20Studio-3DDC84.svg?style=for-the-badge&logo=android-studio&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
 ## Autor
 
