@@ -9,6 +9,7 @@
 import React from 'react';
 import {SafeAreaView, StyleSheet, Text} from 'react-native';
 import Navigation from './app/src/navigation';
+import RelativeInformationRegistrationScreen from './app/src/screens/RelativeInformationRegistrationScreen/RelativeInformationRegistrationScreen';
 
 const App = () => {
   return (

@@ -5,14 +5,17 @@ import {useNavigation} from '@react-navigation/native';
 import CustomInput from '../../components/CustomInput/CustomInput';
 import CustomButton from '../../components/CustomButton/CustomButton';
 import CheckBox from '../../components/CheckBox';
-import PatientAnamnesis from '../../components/PatientAnamnesis';
 
 const PatientRegistrationScreen = () => {
   const [name, setName] = useState('');
   const [lastname, setLastname] = useState('');
   const [age, setAge] = useState('');
-  const [address, setAddress] = useState('');
+  const [street, setStreet] = useState('');
+  const [postalCode, setPostalCode] = useState('');
+  const [city, setCity] = useState('');
+  const [state, setState] = useState('');
   const [phone, setPhone] = useState('');
+  const [secondaryPhone, setSecondaryPhone] = useState('');
 
   const optionsGender = [
     {text: 'Feminino', id: 1},
@@ -43,10 +46,20 @@ const PatientRegistrationScreen = () => {
       </View>
 
       <CustomInput
-        placeholder="Rua, número, cidade, CEP e estado."
-        value={address}
-        setValue={setAddress}
+        placeholder="Rua e número"
+        value={street}
+        setValue={setStreet}
       />
+
+      <CustomInput
+        placeholder="CEP"
+        value={postalCode}
+        setValue={setPostalCode}
+      />
+
+      <CustomInput placeholder="Cidade" value={city} setValue={setCity} />
+
+      <CustomInput placeholder="Estado" value={state} setValue={setState} />
 
       <CustomInput
         placeholder="Telefone ou celular"
@@ -54,7 +67,11 @@ const PatientRegistrationScreen = () => {
         setValue={setPhone}
       />
 
-      <PatientAnamnesis />
+      <CustomInput
+        placeholder="Telefone ou celular secundário"
+        value={secondaryPhone}
+        setValue={setSecondaryPhone}
+      />
 
       <CustomButton text="Cadastrar" onPress={onRegisterPatientPress} />
     </ScrollView>

@@ -3,8 +3,11 @@ import {View, Text, StyleSheet} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
 
 import CheckBox from '../../components/CheckBox';
+import CustomInput from '../CustomInput/CustomInput';
 
 const PatientAnamnesis = () => {
+  const [disease, setDisease] = useState('');
+
   const optionsBloodType = [
     {text: 'A', id: 1},
     {text: 'B', id: 2},
@@ -13,57 +16,57 @@ const PatientAnamnesis = () => {
   ];
 
   const optionsRhFactor = [
-    {text: '-', id: 1},
-    {text: '+', id: 2},
+    {text: '-', id: 5},
+    {text: '+', id: 6},
   ];
 
   const optionsYesOrNo = [
-    {text: 'Sim', id: 1},
-    {text: 'Não', id: 2},
+    {text: 'Sim', id: 7},
+    {text: 'Não', id: 8},
   ];
 
   const optionsDeficiency = [
-    {text: 'Auditiva', id: 1},
-    {text: 'Visual', id: 2},
-    {text: 'Física', id: 3},
-    {text: 'Fala ou voz', id: 4},
-    {text: 'Cognitiva ou memória', id: 5},
+    {text: 'Auditiva', id: 9},
+    {text: 'Visual', id: 10},
+    {text: 'Física', id: 11},
+    {text: 'Fala ou voz', id: 12},
+    {text: 'Cognitiva ou memória', id: 13},
   ];
 
   const optionsLocomotion = [
-    {text: 'Caminha sozinho em segurança', id: 1},
-    {text: 'Ajuda ocasional', id: 2},
-    {text: 'Ajuda frequente', id: 3},
-    {text: 'Muleta ou bengala', id: 4},
-    {text: 'Andador', id: 5},
-    {text: 'Cadeira de rodas', id: 6},
-    {text: 'Imobilidade completa (acamado)', id: 7},
+    {text: 'Caminha sozinho em segurança', id: 14},
+    {text: 'Ajuda ocasional', id: 15},
+    {text: 'Ajuda frequente', id: 16},
+    {text: 'Muleta ou bengala', id: 17},
+    {text: 'Andador', id: 18},
+    {text: 'Cadeira de rodas', id: 19},
+    {text: 'Imobilidade completa (acamado)', id: 20},
   ];
 
   const optionsBasicActivities = [
-    {text: 'Tomar banho', id: 1},
-    {text: 'Vestir-se', id: 2},
-    {text: 'Usar o vaso sanitário', id: 3},
-    {text: 'Transferir-se', id: 4},
-    {text: 'Controlar esfincter uruário e/ou fecal', id: 5},
-    {text: 'Alimentar-se', id: 6},
+    {text: 'Tomar banho', id: 21},
+    {text: 'Vestir-se', id: 22},
+    {text: 'Usar o vaso sanitário', id: 23},
+    {text: 'Transferir-se', id: 24},
+    {text: 'Controlar esfincter uruário e/ou fecal', id: 25},
+    {text: 'Alimentar-se', id: 26},
   ];
 
   const optionsIntrumentalActivities = [
-    {text: 'Preparar Refeições', id: 1},
-    {text: 'Tomar remédio corretamente', id: 2},
-    {text: 'Fazer compras', id: 3},
-    {text: 'Controlar seu dinheiro', id: 4},
-    {text: 'Usar o telefone', id: 5},
-    {text: 'Arrumar a casa', id: 6},
-    {text: 'Lavar roupa', id: 7},
-    {text: 'Sair sozinho para lugares distantes', id: 8},
-    {text: 'Manter-se em dia com as atualidades', id: 9},
+    {text: 'Preparar Refeições', id: 27},
+    {text: 'Tomar remédio corretamente', id: 28},
+    {text: 'Fazer compras', id: 29},
+    {text: 'Controlar seu dinheiro', id: 30},
+    {text: 'Usar o telefone', id: 31},
+    {text: 'Arrumar a casa', id: 32},
+    {text: 'Lavar roupa', id: 33},
+    {text: 'Sair sozinho para lugares distantes', id: 34},
+    {text: 'Manter-se em dia com as atualidades', id: 35},
     {
       text: 'Prestar atenção, entender e discutir um programa, jornal ou revista',
-      id: 10,
+      id: 36,
     },
-    {text: 'Lembrar-se de compromissos, acontecimentos e familiares', id: 11},
+    {text: 'Lembrar-se de compromissos, acontecimentos e familiares', id: 37},
   ];
 
   return (
@@ -105,6 +108,16 @@ const PatientAnamnesis = () => {
         Faz atividade física (inclui fisioterapia, pilates e afins)?
       </Text>
       <CheckBox options={optionsYesOrNo} />
+
+      <Text style={styles.text}>
+        O paciente possui alguma doença? Se sim digite ela(s), caso contrário
+        escreva que não.
+      </Text>
+      <CustomInput
+        placeholder="Exemplo: diabetes, hipertensão, colesterol alto, alzheimer e etc."
+        value={disease}
+        setValue={setDisease}
+      />
     </View>
   );
 };

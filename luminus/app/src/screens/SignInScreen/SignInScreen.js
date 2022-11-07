@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {View, Text, Image, StyleSheet, useWindowDimensions} from 'react-native';
+import {View, Image, StyleSheet, useWindowDimensions} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
 
 import Logo from '../../../assets//images/logo2-luminus.png';

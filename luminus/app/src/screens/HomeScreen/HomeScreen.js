@@ -35,7 +35,7 @@ const SignUpScreen = () => {
       <CustomButton text="Ver pacientes" onPress={onExistentPatientsPress} />
 
       <CustomButton
-        text="Cadastrar pacientes"
+        text="Cadastrar paciente"
         onPress={onPatientRegistrationPress}
       />
 
