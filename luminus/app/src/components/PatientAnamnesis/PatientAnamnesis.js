@@ -1,12 +1,12 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {View, Text, StyleSheet} from 'react-native';
-import {useNavigation} from '@react-navigation/native';
+import {useForm} from 'react-hook-form';
 
 import CheckBox from '../../components/CheckBox';
 import CustomInput from '../CustomInput/CustomInput';
 
 const PatientAnamnesis = () => {
-  const [disease, setDisease] = useState('');
+  const {control} = useForm();
 
   const optionsBloodType = [
     {text: 'A', id: 1},
@@ -114,9 +114,10 @@ const PatientAnamnesis = () => {
         escreva que não.
       </Text>
       <CustomInput
+        control={control}
+        name="diseases"
         placeholder="Exemplo: diabetes, hipertensão, colesterol alto, alzheimer e etc."
-        value={disease}
-        setValue={setDisease}
+        rules={{required: 'Este campo não pode ficar em branco'}}
       />
     </View>
   );
