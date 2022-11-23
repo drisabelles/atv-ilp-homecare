@@ -62,11 +62,8 @@ $ cd atv-ilp-luminus\luminus
 # Instale as dependências
 $ npm install
 
-# Em um terminal, inicie o projeto
-$ npm start
-
-# Em outro terminal, rode o projeto no emulador
-$ npm run android
+# Inicie o projeto
+$ npx react-native run-android
 
 ```
 
