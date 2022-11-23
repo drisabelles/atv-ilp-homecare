@@ -45,7 +45,9 @@ Para mostrar as telas existentes na aplicação de forma mais prática, abaixo t
 
 <img width="300px" heigth="700px" src="https://github.com/drisabelles/atv-ilp-luminus/blob/main/images/tela-patientregistration.png">&nbsp;&nbsp;&nbsp;&nbsp;<img width="300px" heigth="700px" src="https://github.com/drisabelles/atv-ilp-luminus/blob/main/images/tela-healthregistration.png">
 
-<img width="300px" heigth="700px" src="https://github.com/drisabelles/atv-ilp-luminus/blob/main/images/tela-medicalregistration.png">&nbsp;&nbsp;&nbsp;&nbsp;<img width="300px" heigth="700px" src="https://github.com/drisabelles/atv-ilp-luminus/blob/main/images/tela-relativeregistration.png">
+<img width="300px" heigth="700px" src="https://github.com/drisabelles/atv-ilp-luminus/blob/main/images/tela-medicalregistration.png">&nbsp;&nbsp;&nbsp;&nbsp;<img width="300px" heigth="700px" src="https://github.com/drisabelles/atv-ilp-luminus/blob/main/images/tela-medicineregistration.png">
+
+<img width="300px" heigth="700px" src="https://github.com/drisabelles/atv-ilp-luminus/blob/main/images/tela-relativeregistration.png">
 
 </br>
 
