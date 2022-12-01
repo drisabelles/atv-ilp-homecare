@@ -22,6 +22,11 @@
 - [X] Tela de cadastro de parentes do paciente
 - [X] Tela de cadastro de medicamentos do paciente
 
+<br />
+
+- [X] React hook form para requerimentos de preenchimento dos campos
+- [X] React router para navegação entre páginas pelos botões 
+
 
 </br>
 
