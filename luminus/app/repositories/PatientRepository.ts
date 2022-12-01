@@ -3,12 +3,12 @@ import dbQuery from "../../api/database";
 export type Patient = {
   name: string;
   age: number;
-  gender: boolean;
+  gender: string;
   street: string;
   city: string;
   state: string;
-  phone: number;
-  secondaryPhone: number;
+  phone: string;
+  secondaryPhone: string;
 };
 
 class PatientRepository {

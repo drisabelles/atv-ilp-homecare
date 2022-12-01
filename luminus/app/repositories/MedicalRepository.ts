@@ -2,7 +2,7 @@ import dbQuery from "../../api/database";
 
 export type Medical = {
   doctorName: string;
-  doctorPhone: number;
+  doctorPhone: string;
   medicalsInsuranceName: string;
 };
 

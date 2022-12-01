@@ -3,8 +3,8 @@ import dbQuery from "../../api/database";
 export type Relative = {
   name: string;
   kinship: string;
-  phone: number;
-  secondaryPhone: number;
+  phone: string;
+  secondaryPhone: string;
   email: string;
 };
 

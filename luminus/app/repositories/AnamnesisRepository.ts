@@ -1,16 +1,16 @@
 import dbQuery from "../../api/database";
 
 export type Anamnesis = {
-  bloodType: boolean;
-  rhFactor: boolean;
-  liveAlone: boolean;
-  deficiency: boolean;
-  locomotion: boolean;
-  basicActivities: boolean;
-  instrumentalActivities: boolean;
-  smoke: boolean;
-  drink: boolean;
-  fisicalActivities: boolean;
+  bloodType: string;
+  rhFactor: string;
+  liveAlone: string;
+  deficiency: string;
+  locomotion: string;
+  basicActivities: string;
+  instrumentalActivities: string;
+  smoke: string;
+  drink: string;
+  fisicalActivities: string;
   diseases: string;
 };
 

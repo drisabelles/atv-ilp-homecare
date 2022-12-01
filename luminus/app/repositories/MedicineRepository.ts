@@ -2,9 +2,9 @@ import dbQuery from "../../api/database";
 
 export type Medicine = {
   name: string;
-  dosage: number;
+  dosage: string;
   howManyTimes: number;
-  howManyPills: number;
+  howManyPills: string;
 };
 
 class MedicineRepository {
