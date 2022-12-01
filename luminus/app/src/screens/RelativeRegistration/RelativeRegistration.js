@@ -20,34 +20,43 @@ const RelativeRegistration = () => {
     <ScrollView style={styles.root}>
       <Text style={styles.title}>Cadastro de parente do paciente</Text>
 
+      <Text style={styles.text}>Nome completo:</Text>
       <CustomInput
         control={control}
         name="relativeName"
-        placeholder="Nome do parente"
+        placeholder=""
         rules={{required: 'Esse campo não pode ficar em branco'}}
       />
+
+      <Text style={styles.text}>Parentesco:</Text>
       <CustomInput
         control={control}
         name="kinship"
-        placeholder="Parentesco"
+        placeholder="Exemplo: filha, irmã, sobrinha, mãe e etc"
         rules={{required: 'Esse campo não pode ficar em branco'}}
       />
+
+      <Text style={styles.text}>Telefone de contato:</Text>
       <CustomInput
         control={control}
         name="relativePhone"
-        placeholder="Telefone ou celular"
+        placeholder="Residencial ou celular"
         rules={{required: 'Esse campo não pode ficar em branco'}}
       />
+
+      <Text style={styles.text}>Telefone de contato secundário:</Text>
       <CustomInput
         control={control}
         name="relativeSecondaryPhone"
-        placeholder="Telefone ou celular secundário"
+        placeholder="Residencial ou celular"
         rules={{required: 'Esse campo não pode ficar em branco'}}
       />
+
+      <Text style={styles.text}>Email:</Text>
       <CustomInput
         control={control}
         name="email"
-        placeholder="Email"
+        placeholder=""
         rules={{required: 'Esse campo não pode ficar em branco'}}
       />
 

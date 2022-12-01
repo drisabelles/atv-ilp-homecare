@@ -20,28 +20,37 @@ const MedicineRegistration = () => {
     <View style={styles.root}>
       <Text style={styles.title}>Cadastro de medicamentos do paciente</Text>
 
+      <Text style={styles.text}>Nome do medicamento:</Text>
       <CustomInput
         control={control}
         name="medicineName"
-        placeholder="Nome do medicamento"
+        placeholder="Nome vendido pela marca ou principío ativo"
         rules={{required: 'Este campo não pode ficar em branco'}}
       />
+
+      <Text style={styles.text}>Dosagem:</Text>
       <CustomInput
         control={control}
         name="dosage"
-        placeholder="Qual a dosagem do medicamento?"
+        placeholder="Exemplo: 100mg "
         rules={{required: 'Este campo não pode ficar em branco'}}
       />
+
+      <Text style={styles.text}>Quantas vezes ao dia deve ser tomado?</Text>
       <CustomInput
         control={control}
         name="howManyTimes"
-        placeholder="Quantas vezes ao dia deve ser tomado?"
+        placeholder=""
         rules={{required: 'Este campo não pode ficar em branco'}}
       />
+
+      <Text style={styles.text}>
+        Em uma dose, quantos comprimidos devem ser tomados?
+      </Text>
       <CustomInput
         control={control}
         name="howManyPills"
-        placeholder="Quantos comprimidos por dose?"
+        placeholder=""
         rules={{required: 'Este campo não pode ficar em branco'}}
       />
 

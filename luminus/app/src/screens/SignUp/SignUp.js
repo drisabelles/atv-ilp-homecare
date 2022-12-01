@@ -15,7 +15,8 @@ const SignUp = () => {
   const pwd = watch('password');
   const navigation = useNavigation();
 
-  const onRegisterPress = () => {
+  const onRegisterPress = data => {
+    console.warn(data);
     navigation.navigate('ConfirmEmail');
   };
 

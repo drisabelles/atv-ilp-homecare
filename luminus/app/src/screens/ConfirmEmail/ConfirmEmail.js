@@ -28,7 +28,6 @@ const ConfirmEmail = () => {
     <View style={styles.root}>
       <Text style={styles.title}>Confirme seu email</Text>
 
-      <Text style={styles.label}>Código</Text>
       <CustomInput
         control={control}
         name="code"

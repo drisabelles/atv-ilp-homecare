@@ -1,21 +1,15 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {ScrollView, View, Text, StyleSheet} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
 import {useForm} from 'react-hook-form';
 
 import CustomInput from '../../components/CustomInput/CustomInput';
 import CustomButton from '../../components/CustomButton/CustomButton';
-import CheckBox from '../../components/CheckBox';
 
 const PatientRegistration = () => {
   const navigation = useNavigation();
 
   const {handleSubmit, control} = useForm();
-
-  const optionsGender = [
-    {text: 'Feminino', id: 1},
-    {text: 'Masculino', id: 2},
-  ];
 
   const onRegisterPatientPress = data => {
     console.warn(data);
@@ -26,53 +20,63 @@ const PatientRegistration = () => {
     <ScrollView style={styles.root}>
       <Text style={styles.title}>Cadastro de Paciente</Text>
 
+      <Text style={styles.text}>Nome completo:</Text>
       <CustomInput
         control={control}
         name="name"
-        placeholder="Nome Completo"
+        placeholder=""
         rules={{required: 'Esse campo não pode ficar em branco'}}
       />
 
+      <Text style={styles.text}>Idade:</Text>
       <CustomInput
         control={control}
         name="age"
-        placeholder="Idade"
+        placeholder=""
         rules={{required: 'Esse campo não pode ficar em branco'}}
       />
 
-      <View style={styles.container}>
-        <Text style={styles.text}>Gênero:</Text>
-        <CheckBox options={optionsGender} />
-      </View>
+      <Text style={styles.text}>Gênero:</Text>
+      <CustomInput
+        control={control}
+        name="gender"
+        placeholder="Feminino ou Masculino"
+        rules={{required: 'Esse campo não pode ficar em branco'}}
+      />
 
+      <Text style={styles.text}>Endereço:</Text>
       <CustomInput
         control={control}
         name="street"
-        placeholder="Rua e número"
+        placeholder="Rua, número e bairro"
         rules={{required: 'Esse campo não pode ficar em branco'}}
       />
 
+      <Text style={styles.text}>CEP:</Text>
       <CustomInput
         control={control}
         name="postalCode"
-        placeholder="CEP"
+        placeholder=""
         rules={{required: 'Esse campo não pode ficar em branco'}}
       />
 
+      <Text style={styles.text}>Cidade:</Text>
       <CustomInput
         control={control}
         name="city"
-        placeholder="Cidade"
+        placeholder=""
         rules={{required: 'Esse campo não pode ficar em branco'}}
       />
 
+      <Text style={styles.text}>Estado:</Text>
       <CustomInput
         control={control}
         name="state"
-        placeholder="Estado"
+        placeholder=""
         rules={{required: 'Esse campo não pode ficar em branco'}}
       />
 
+      <Text style={styles.text}>Telefone de contato:</Text>
       <CustomInput
         control={control}
         name="phone"
@@ -80,6 +84,7 @@ const PatientRegistration = () => {
         rules={{required: 'Esse campo não pode ficar em branco'}}
       />
 
+      <Text style={styles.text}>Telefone de contato alternativo:</Text>
       <CustomInput
         control={control}
         name="secondaryPhone"

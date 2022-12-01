@@ -27,7 +27,6 @@ const ForgotPassword = () => {
     <View style={styles.root}>
       <Text style={styles.title}>Crie uma nova senha</Text>
 
-      <Text style={styles.label}>Código</Text>
       <CustomInput
         control={control}
         name="code"
@@ -35,7 +34,6 @@ const ForgotPassword = () => {
         rules={{require: 'Insira o código'}}
       />
 
-      <Text style={styles.label}>Nova senha</Text>
       <CustomInput
         control={control}
         name="password"
