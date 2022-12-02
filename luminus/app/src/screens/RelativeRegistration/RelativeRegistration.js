@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {ScrollView, View, Text, StyleSheet} from 'react-native';
+import {View, Text, StyleSheet} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
 import {useForm} from 'react-hook-form';
 
@@ -17,7 +17,7 @@ const RelativeRegistration = () => {
   };
 
   return (
-    <ScrollView style={styles.root}>
+    <View style={styles.root}>
       <Text style={styles.title}>Cadastro de parente do paciente</Text>
 
       <Text style={styles.text}>Nome completo:</Text>
@@ -64,7 +64,7 @@ const RelativeRegistration = () => {
         text="Cadastrar"
         onPress={handleSubmit(onRegisterRelativeInformationPress)}
       />
-    </ScrollView>
+    </View>
   );
 };
 

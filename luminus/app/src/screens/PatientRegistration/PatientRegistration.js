@@ -18,84 +18,86 @@ const PatientRegistration = () => {
 
   return (
     <ScrollView style={styles.root}>
-      <Text style={styles.title}>Cadastro de Paciente</Text>
+      <View style={{marginBottom: 40}}>
+        <Text style={styles.title}>Cadastro de Paciente</Text>
 
-      <Text style={styles.text}>Nome completo:</Text>
-      <CustomInput
-        control={control}
-        name="name"
-        placeholder=""
-        rules={{required: 'Esse campo não pode ficar em branco'}}
-      />
+        <Text style={styles.text}>Nome completo:</Text>
+        <CustomInput
+          control={control}
+          name="name"
+          placeholder=""
+          rules={{required: 'Esse campo não pode ficar em branco'}}
+        />
 
-      <Text style={styles.text}>Idade:</Text>
-      <CustomInput
-        control={control}
-        name="age"
-        placeholder=""
-        rules={{required: 'Esse campo não pode ficar em branco'}}
-      />
+        <Text style={styles.text}>Idade:</Text>
+        <CustomInput
+          control={control}
+          name="age"
+          placeholder=""
+          rules={{required: 'Esse campo não pode ficar em branco'}}
+        />
 
-      <Text style={styles.text}>Gênero:</Text>
-      <CustomInput
-        control={control}
-        name="gender"
-        placeholder="Feminino ou Masculino"
-        rules={{required: 'Esse campo não pode ficar em branco'}}
-      />
+        <Text style={styles.text}>Gênero:</Text>
+        <CustomInput
+          control={control}
+          name="gender"
+          placeholder="Feminino ou Masculino"
+          rules={{required: 'Esse campo não pode ficar em branco'}}
+        />
 
-      <Text style={styles.text}>Endereço:</Text>
-      <CustomInput
-        control={control}
-        name="street"
-        placeholder="Rua, número e bairro"
-        rules={{required: 'Esse campo não pode ficar em branco'}}
-      />
+        <Text style={styles.text}>Endereço:</Text>
+        <CustomInput
+          control={control}
+          name="street"
+          placeholder="Rua, número e bairro"
+          rules={{required: 'Esse campo não pode ficar em branco'}}
+        />
 
-      <Text style={styles.text}>CEP:</Text>
-      <CustomInput
-        control={control}
-        name="postalCode"
-        placeholder=""
-        rules={{required: 'Esse campo não pode ficar em branco'}}
-      />
+        <Text style={styles.text}>CEP:</Text>
+        <CustomInput
+          control={control}
+          name="postalCode"
+          placeholder=""
+          rules={{required: 'Esse campo não pode ficar em branco'}}
+        />
 
-      <Text style={styles.text}>Cidade:</Text>
-      <CustomInput
-        control={control}
-        name="city"
-        placeholder=""
-        rules={{required: 'Esse campo não pode ficar em branco'}}
-      />
+        <Text style={styles.text}>Cidade:</Text>
+        <CustomInput
+          control={control}
+          name="city"
+          placeholder=""
+          rules={{required: 'Esse campo não pode ficar em branco'}}
+        />
 
-      <Text style={styles.text}>Estado:</Text>
-      <CustomInput
-        control={control}
-        name="state"
-        placeholder=""
-        rules={{required: 'Esse campo não pode ficar em branco'}}
-      />
+        <Text style={styles.text}>Estado:</Text>
+        <CustomInput
+          control={control}
+          name="state"
+          placeholder=""
+          rules={{required: 'Esse campo não pode ficar em branco'}}
+        />
 
-      <Text style={styles.text}>Telefone de contato:</Text>
-      <CustomInput
-        control={control}
-        name="phone"
-        placeholder="Telefone ou celular"
-        rules={{required: 'Esse campo não pode ficar em branco'}}
-      />
+        <Text style={styles.text}>Telefone de contato:</Text>
+        <CustomInput
+          control={control}
+          name="phone"
+          placeholder="Telefone ou celular"
+          rules={{required: 'Esse campo não pode ficar em branco'}}
+        />
 
-      <Text style={styles.text}>Telefone de contato alternativo:</Text>
-      <CustomInput
-        control={control}
-        name="secondaryPhone"
-        placeholder="Telefone ou celular secundário"
-        rules={{required: 'Esse campo não pode ficar em branco'}}
-      />
+        <Text style={styles.text}>Telefone de contato alternativo:</Text>
+        <CustomInput
+          control={control}
+          name="secondaryPhone"
+          placeholder="Telefone ou celular secundário"
+          rules={{required: 'Esse campo não pode ficar em branco'}}
+        />
 
-      <CustomButton
-        text="Cadastrar"
-        onPress={handleSubmit(onRegisterPatientPress)}
-      />
+        <CustomButton
+          text="Cadastrar"
+          onPress={handleSubmit(onRegisterPatientPress)}
+        />
+      </View>
     </ScrollView>
   );
 };
