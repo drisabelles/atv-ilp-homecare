@@ -11,8 +11,22 @@
 </br>
 
 ## Usabilidades
+- [X] Tela de login
+- [X] Tela de cadastro
+- [X] Tela de recuperação de senha
+- [X] Tela de mudança de senha
+- [X] Tela home
+- [X] Tela de cadastro do paciente
+- [X] Tela de cadastro de anamnese do paciente
+- [X] Tela de cadastro do médico do paciente
+- [X] Tela de cadastro de parentes do paciente
+- [X] Tela de cadastro de medicamentos do paciente
 
-Em breve.
+<br />
+
+- [X] React hook form para requerimentos de preenchimento dos campos
+- [X] React router para navegação entre páginas pelos botões 
+
 
 </br>
 
