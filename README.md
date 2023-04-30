@@ -6,11 +6,20 @@
 
 </div>
 
-> Aplicativo mobile para cuidadores de idosos e profissionais da área da saúde que realizam atendimentos à domicílio. Esse é um desenvolvimento decorrente do acompanhamento das aulas de Programação para Dispositivos Móveis I, ministradas pelo professor Gerson Penha na FATEC São José dos Campos - Jessen Vidal.
+<div align="center">
+
+[Sobre o projeto](#project) | [Usabilidades](#usabilities) | [Ferramentas](#tools) | [Modelagem de Dados](#orm) | [Screenshots](#screenshots) | [Executando](#running) | [Autor](#autor)
+
+</div>
 
 </br>
 
-## Usabilidades
+## ✒️ Sobre o projeto <a name="project"></a>
+Aplicativo mobile para cuidadores de idosos e profissionais da área da saúde que realizam atendimentos à domicílio. Esse é um desenvolvimento decorrente do acompanhamento das aulas de Programação para Dispositivos Móveis I, ministradas pelo professor Gerson Penha na FATEC São José dos Campos - Jessen Vidal.
+
+</br>
+
+## 🪢 Usabilidades <a name="usabilities"></a>
 - [X] Tela de login
 - [X] Tela de cadastro
 - [X] Tela de recuperação de senha
@@ -30,7 +39,7 @@
 
 </br>
 
-## Ferramentas
+## ⚒️ Ferramentas <a name="tools"></a>
 ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-e4d2e4.svg?style=for-the-badge&logo=visual-studio-code&logoColor=black)
 ![React Native](https://img.shields.io/badge/react_native-e4d2e4.svg?style=for-the-badge&logo=react&logoColor=black)
 ![Android Studio](https://img.shields.io/badge/Android%20Studio-e4d2e4.svg?style=for-the-badge&logo=android-studio&logoColor=black)
@@ -39,7 +48,7 @@
 
 </br>
 
-## Modelagem de dados
+## 💽 Modelagem de dados <a name="orm"></a>
 
 Para melhor ilustrar as tabelas e suas correspondências, temos essa modelagem de dados feita com base nas informações que serão obtidas e suas conexões.
 
@@ -47,7 +56,7 @@ Para melhor ilustrar as tabelas e suas correspondências, temos essa modelagem d
 
 </br>
 
-## Screenshots
+## 🖼️ Screenshots <a name="screenshots"></a>
 
 Para mostrar as telas existentes na aplicação de forma mais prática, abaixo temos alguns prints do aplicativo.
 
@@ -65,7 +74,7 @@ Para mostrar as telas existentes na aplicação de forma mais prática, abaixo t
 
 </br>
 
-## Executando
+## ⚙️ Executando <a name="running"></a>
 
 ```bash
 
@@ -85,6 +94,6 @@ $ npx react-native run-android
 
 </br>
 
-## Autor
+## 👩‍💻 Autor <a name="autor"></a>
 
 - LinkedIn - [Isabelle Ribeiro](https://www.linkedin.com/in/drisabelles/)
