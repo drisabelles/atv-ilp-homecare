@@ -79,10 +79,10 @@ Para mostrar as telas existentes na aplicação de forma mais prática, abaixo t
 ```bash
 
 # Baixe este repositório ou clone pelo Git usando o comando:
-$ git clone https://github.com/drisabelles/atv-ilp-luminus.git
+$ git clone https://github.com/drisabelles/luminus.git
 
 # Acesse a pasta do projeto
-$ cd atv-ilp-luminus\luminus
+$ cd luminus\luminus
 
 # Instale as dependências
 $ npm install
