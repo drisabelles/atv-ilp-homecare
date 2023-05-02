@@ -45,6 +45,7 @@ Aplicativo mobile para cuidadores de idosos e profissionais da área da saúde q
 ![Android Studio](https://img.shields.io/badge/Android%20Studio-e4d2e4.svg?style=for-the-badge&logo=android-studio&logoColor=black)
 ![JavaScript](https://img.shields.io/badge/javascript-e4d2e4.svg?style=for-the-badge&logo=javascript&logoColor=black)
 ![React Hook Form](https://img.shields.io/badge/React%20Hook%20Form-e4d2e4.svg?style=for-the-badge&logo=reacthookform&logoColor=black)
+![React Router](https://img.shields.io/badge/React_Router-e4d2e4?style=for-the-badge&logo=react-router&logoColor=black)
 
 </br>
 
